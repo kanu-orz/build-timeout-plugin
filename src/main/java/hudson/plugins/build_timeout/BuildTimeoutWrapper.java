@@ -38,7 +38,7 @@ import org.kohsuke.stapler.StaplerRequest;
  */
 public class BuildTimeoutWrapper extends BuildWrapper {
     
-    public static long MINIMUM_TIMEOUT_MILLISECONDS = Long.getLong(BuildTimeoutWrapper.class.getName()+ ".MINIMUM_TIMEOUT_MILLISECONDS", 3 * 60 * 1000);
+    public static long MINIMUM_TIMEOUT_MILLISECONDS = Long.getLong(BuildTimeoutWrapper.class.getName()+ ".MINIMUM_TIMEOUT_MILLISECONDS", 1 * 60 * 1000);
 
 
     private /* final */ BuildTimeOutStrategy strategy;
